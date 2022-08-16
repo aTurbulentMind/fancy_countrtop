@@ -1,0 +1,161 @@
+{
+  ".svelte-kit/runtime/client/start.js": {
+    "file": "_app/immutable/start-eee64e07.js",
+    "src": ".svelte-kit/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-fa430256.js"
+    ],
+    "dynamicImports": [
+      "src/routes/__layout.svelte",
+      "src/routes/__error.svelte",
+      "src/routes/Selectionfive.svelte",
+      "src/routes/about.svelte",
+      "src/routes/index.svelte",
+      "src/routes/services.svelte",
+      "src/routes/showroom.svelte",
+      "src/routes/showrooms/bathroom.svelte",
+      "src/routes/testim.svelte"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "_app/immutable/pages/__layout.svelte-22a45f1c.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-fa430256.js"
+    ],
+    "css": [
+      "_app/immutable/assets/__layout-8b54aedf.css"
+    ]
+  },
+  "src/routes/__error.svelte": {
+    "file": "_app/immutable/pages/__error.svelte-b8c566f0.js",
+    "src": "src/routes/__error.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-fa430256.js"
+    ]
+  },
+  "src/routes/Selectionfive.svelte": {
+    "file": "_app/immutable/pages/Selectionfive.svelte-5611913c.js",
+    "src": "src/routes/Selectionfive.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-fa430256.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Selectionfive-bc4ba557.css"
+    ]
+  },
+  "src/routes/about.svelte": {
+    "file": "_app/immutable/pages/about.svelte-a256ad9d.js",
+    "src": "src/routes/about.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-fa430256.js"
+    ],
+    "css": [
+      "_app/immutable/assets/about-d7582474.css"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "_app/immutable/pages/index.svelte-87d23e61.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-fa430256.js"
+    ],
+    "css": [
+      "_app/immutable/assets/index-e17580e1.css"
+    ]
+  },
+  "src/routes/services.svelte": {
+    "file": "_app/immutable/pages/services.svelte-2ff31ade.js",
+    "src": "src/routes/services.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-fa430256.js"
+    ],
+    "css": [
+      "_app/immutable/assets/services-66af6e40.css"
+    ]
+  },
+  "src/routes/showroom.svelte": {
+    "file": "_app/immutable/pages/showroom.svelte-efccc82c.js",
+    "src": "src/routes/showroom.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-fa430256.js"
+    ],
+    "css": [
+      "_app/immutable/assets/showroom-2638f919.css"
+    ]
+  },
+  "src/routes/showrooms/bathroom.svelte": {
+    "file": "_app/immutable/pages/showrooms/bathroom.svelte-ceacf6a0.js",
+    "src": "src/routes/showrooms/bathroom.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-fa430256.js"
+    ],
+    "css": [
+      "_app/immutable/assets/bathroom-0dc728cb.css"
+    ]
+  },
+  "src/routes/testim.svelte": {
+    "file": "_app/immutable/pages/testim.svelte-9fee6920.js",
+    "src": "src/routes/testim.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-fa430256.js"
+    ],
+    "css": [
+      "_app/immutable/assets/testim-167d612d.css"
+    ]
+  },
+  "_index-fa430256.js": {
+    "file": "_app/immutable/chunks/index-fa430256.js"
+  },
+  "src/routes\\__layout.css": {
+    "file": "_app/immutable/assets/__layout-8b54aedf.css",
+    "src": "src/routes\\__layout.css"
+  },
+  "src/routes\\Selectionfive.css": {
+    "file": "_app/immutable/assets/Selectionfive-bc4ba557.css",
+    "src": "src/routes\\Selectionfive.css"
+  },
+  "src/routes\\about.css": {
+    "file": "_app/immutable/assets/about-d7582474.css",
+    "src": "src/routes\\about.css"
+  },
+  "src/routes\\services.css": {
+    "file": "_app/immutable/assets/services-66af6e40.css",
+    "src": "src/routes\\services.css"
+  },
+  "src/routes/showrooms\\bathroom.css": {
+    "file": "_app/immutable/assets/bathroom-0dc728cb.css",
+    "src": "src/routes/showrooms\\bathroom.css"
+  },
+  "src/routes\\showroom.css": {
+    "file": "_app/immutable/assets/showroom-2638f919.css",
+    "src": "src/routes\\showroom.css"
+  },
+  "src/routes\\index.css": {
+    "file": "_app/immutable/assets/index-e17580e1.css",
+    "src": "src/routes\\index.css"
+  },
+  "src/routes\\testim.css": {
+    "file": "_app/immutable/assets/testim-167d612d.css",
+    "src": "src/routes\\testim.css"
+  }
+}
