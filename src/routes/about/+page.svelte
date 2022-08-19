@@ -1,3 +1,7 @@
+<script lang="ts">
+    import '$lib/style/test.css'
+    </script>
+
 
     <body>
         
