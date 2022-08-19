@@ -1,3 +1,22 @@
+<script>
+         
+        // Get HTML head element
+        var head = document.getElementsByTagName('HEAD')[0];
+ 
+        // Create new link Element
+        var link = document.createElement('link');
+ 
+        // set the attributes for link element
+        link.rel = 'stylesheet';
+     
+        link.type = 'text/css';
+     
+        link.href = '/src/lib/test.css';
+ 
+        // Append link element to HTML head
+        head.appendChild(link);
+    </script>
+
 <body>
 	<h1>Prices</h1>
     <img src="img/money.png/" alt="">
