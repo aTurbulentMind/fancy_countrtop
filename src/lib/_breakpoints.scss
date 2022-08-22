@@ -1,0 +1,42 @@
+@media (max-width: 768px) {
+
+    .art-banner-bg {
+        background-size: 60%;
+    }
+}
+
+
+@media (min-width: 780px) {
+
+    .container {
+        grid-template: "1fr 1fr 1fr"250px "1fr 1fr 1fr"250px "1fr 1fr 1fr "250px "1fr 1fr 1fr"250px "1fr 1fr 1fr "250px;
+    }
+
+    .social {
+
+        img {
+            width: 70%;
+            height: 70%;
+        }
+    }
+
+    .vid {
+        width: 93vw;
+        height: 100vh;
+    }
+
+    p,
+    h1,
+    h2,
+    h3 {
+        margin: 13%;
+    }
+
+    .nav-item {
+        .link-text {
+            font-size: 2.5vw;
+        }
+    }
+}
+
+@media (min-width: 1380px) {}
