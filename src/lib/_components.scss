@@ -72,3 +72,16 @@ $tSpeed: 0.3s;
         }
     }
 }
+
+
+//review block
+.reviews {
+    @include grid;
+    margin-top: -5%;
+    margin: $marg_xxxl;
+
+    .card {
+        padding: 20px;
+        margin: $marg;
+    }
+}

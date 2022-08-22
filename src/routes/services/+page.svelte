@@ -33,14 +33,6 @@
 		through the tried and true practice of hard work.
 	</p>
 
-	<h2>extra</h2>
-    <img src="img/weby.png/" alt="">
-	<p>
-		It is easy to have built it and let it be. Before you know it, five years have passed. Now what
-		was great seems stale and in need of a refresh. Let's talk about bringing your site into the
-		future.
-	</p>
-
 	<h2>Outdoor</h2>
     <img src="img/desiggy.png/" alt="">
 	<p>
@@ -48,6 +40,14 @@
 		dispersal to communicate the ideas of your entity. Great design works with a variety of media
 		tools in order to inspire a particular bracket. Video, audio, images and typography are the
 		backbone of graphic design. &nbsp; &nbsp; &nbsp;
+	</p>
+
+	<h2>Extra</h2>
+    <img src="img/weby.png/" alt="">
+	<p>
+		It is easy to have built it and let it be. Before you know it, five years have passed. Now what
+		was great seems stale and in need of a refresh. Let's talk about bringing your site into the
+		future.
 	</p>
 
 </body>
@@ -60,10 +60,6 @@
 			margin-bottom: -30px;
 		}
 	}
-
-    p{
-        margin: 5% 10% 10% 20%;
-    }
 
     img{
         max-width:8%;

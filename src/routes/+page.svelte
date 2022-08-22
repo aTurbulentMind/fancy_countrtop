@@ -145,15 +145,8 @@
 		grid-row: 4;
 	}
 
-	.reviews{
-		@include grid;
+    .reviews{
 		background: $gradientFlip;
-		margin-top: -5%;
-		
-		.card{
-			 padding: 20px;
-			 margin: $marg;
-		}
 	}
 
 	.butt{

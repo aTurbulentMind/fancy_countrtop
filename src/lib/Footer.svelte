@@ -1,19 +1,19 @@
 <div class="footer">
-	<h1>Artesian Artistic Countertops</h1>
+	<h1>A<br> A<br> C</h1>
 	<footBox>
 		<ul>
 			<li><a href="/">HOME</a></li>
-			<li><a href="/">CONTACT</a></li>
-			<li><a href="/">(360)555-5555</a></li>
-			<li><a href="/">GALLERY</a></li>
-			<li><a href="/">ABOUT</a></li>
+			<li><a href="/">CALL</a></li>
+			<li><a href="/contact/">CONTACT</a></li>
+			<li><a href="/showroom/">SHOWROOM</a></li>
+			<li><a href="/about/">ABOUT</a></li>
 		</ul>
 	</footBox>
 	<footBox>
 		<ul>
 			<li><a href="/">SHOWROOM:</a></li>
 			<li><a href="/">KITCHEN</a></li>
-			<li><a href="/">BATHROOM</a></li>
+			<li><a href="/bathroom/">BATHROOM</a></li>
 			<li><a href="/">OUTDOOR</a></li>
 		</ul>
 	</footBox>
@@ -72,7 +72,7 @@
 			h1 {
 				margin: $marg;
 				padding: $pad;
-				font-size: $font;
+				font-size: $f-sm;
 			}
 
 			ul {

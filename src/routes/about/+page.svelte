@@ -50,9 +50,7 @@
           max-width: 99%;
       }
 
-      p{
-        margin: 20%;
-      }
+     
 
    @media (min-width:700px) {
 
