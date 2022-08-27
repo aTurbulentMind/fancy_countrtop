@@ -35,3 +35,28 @@ img {
         scroll-snap-align: start;
     }
 }
+
+@media (min-width: 780px) {
+    .media-scroller {
+        padding: $pad_sm;
+    }
+
+    .media-element {
+        margin-left: 20%;
+    }
+
+    .media-element,
+    img {
+        height: 80%;
+        width: 80%;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .media-scroller {
+        grid-auto-columns: 70%;
+    }
+
+
+}

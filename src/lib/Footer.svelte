@@ -1,24 +1,24 @@
 <div class="footer">
 	<h1>A<br> A<br> C</h1>
 	<footBox>
-		<ul>
+		<ul style="grid-row: 2;
+						grid-column: 2;">
 			<li><a href="/">HOME</a></li>
 			<li><a href="/">CALL</a></li>
 			<li><a href="/contact/">CONTACT</a></li>
-			<li><a href="/showroom/">SHOWROOM</a></li>
+			<li><a href="/services/">SERVICES</a></li>
 			<li><a href="/about/">ABOUT</a></li>
 		</ul>
 	</footBox>
 	<footBox>
-		<ul>
-			<li><a href="/">SHOWROOM:</a></li>
+		<ul style="grid-row: 2;
+						grid-column: 2;">
+			<li><a href="/showroom/">SHOWROOM:</a></li>
 			<li><a href="/">KITCHEN</a></li>
 			<li><a href="/bathroom/">BATHROOM</a></li>
 			<li><a href="/">OUTDOOR</a></li>
 		</ul>
 	</footBox>
-	<footBox />
-	<footBox />
 	<footBox>
 		<socBox>
 			<a href="/"
@@ -66,18 +66,23 @@
 		background: $gradient;
 		margin-bottom: $marg_xxxl;
 		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
 
 		footBox {
 			margin: 8% 0 0 0;
 			h1 {
+				display: grid;
+				grid-row: 1;
+				grid-column: 1;
 				margin: $marg;
 				padding: $pad;
 				font-size: $f-sm;
 			}
 
 			ul {
+				display: grid;
 				position: relative;
-				margin: 5% 3% -8% 8%;
+				margin: 5% 3% -8% 10%;
 				list-style: none;
 
 				li {
@@ -88,29 +93,31 @@
 					a {
 						color: $textMain;
 						font-size: $font;
-						
-						 &:hover {
-        					transition: all $tSpeed ease-in-out;
-							color: $grabber;
-        					transform: scale(1.1);
-        					cursor: pointer;
-						    text-decoration: underline;
-							text-shadow: $box-shadow;
-    }
 					}
 				}
 			}
 			socBox {
-				margin: 2% 0 0 -10%;
 				SVG {
 					background: $textMain;
 					color: $backMain;
 					border-radius: 50%;
-					margin: $marg;
+					margin: $marg $marg_xl;
 					padding: $marg;
 					width: 10%;
+
+					&:hover{
+						@include butts;
+					}
 				}
 			}
 		}
 	}
+
+	@media (min-width: 780px) {
+
+    //foots
+    .footer {
+        margin-bottom: -8%;
+    }
+}
 </style>

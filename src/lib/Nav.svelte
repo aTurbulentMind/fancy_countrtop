@@ -104,7 +104,7 @@
 	@import 'basecamp';
 
 	.navbar {
-		background: $backMain;
+		background: $highlight;
 		box-shadow: $mainShadow;
 		backdrop-filter: blur(1.5px);
 		-webkit-backdrop-filter: blur(1.5px);
@@ -209,7 +209,7 @@
 		margin-bottom: $marg;
 		text-align: center;
 		color: $textMain;
-		background: $backTwo;
+		background: $backTre;
 		font-size: $font;
 		letter-spacing: 0.3ch;
 		width: 100%;
@@ -326,6 +326,14 @@
 				display: none;
 				transform: $tSpeed;
 			}
+		}
+	}
+
+	@media (min-width: 1280px) {
+
+		.nav-link{
+			.link-text {
+			font-size: $font;}
 		}
 	}
 </style>

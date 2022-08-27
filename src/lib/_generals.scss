@@ -16,7 +16,17 @@ body {
 
 a {
     text-decoration: none;
-    color: $highlight;
+    color: $grabber;
+    font-weight: 500;
+
+    &:hover {
+        transition: all 0.3s ease-in-out;
+        color: $extra;
+        transform: scale(1.1);
+        cursor: pointer;
+        text-decoration: underline;
+        text-shadow: $box-shadow;
+    }
 }
 
 h1,

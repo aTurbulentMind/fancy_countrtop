@@ -88,6 +88,7 @@
 
 		input,
 		textarea {
+			
 			width: 100%;
 			font-size: $f-lg;
 			background: transparent;
@@ -97,7 +98,7 @@
 			outline: none;
 			border-bottom: 1px solid $textMain;
 			transition: $tSpeed linear;
-			margin-left: $marg;
+			margin-left: $marg_xxxl;
 		}
 
 		input:focus,
@@ -109,10 +110,12 @@
 			background: $backTwo;
 			border-radius: $rad;
 			font-size: $f-lg;
+			grid-column: 2;
+			grid-row: 5;
 		}
 
 		.soc {
-			grid-column: 5;
+			grid-column: 4;
 			grid-row: 5;
 			margin: $marg_xl;
 		}
@@ -141,8 +144,9 @@
 	}
 
 	.form {
+		margin-top: $marg_xl;
 		grid-column: 1;
-		grid-row: 4;
+		grid-row: 5;
 	}
 
     .reviews{
