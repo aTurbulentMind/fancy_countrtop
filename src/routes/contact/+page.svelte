@@ -174,7 +174,6 @@
 
    container{
         letter-spacing: 1.5px;
-        
 
         h2{
         color: $textMain;

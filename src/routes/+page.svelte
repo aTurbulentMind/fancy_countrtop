@@ -41,17 +41,20 @@
 			
 			<div class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, enim quisquam? Hic. <a href="/">CLICK</a></div>
 		</div>
+
 		<div class="card">
 			<div class="card-title">Better than I expected</div>
 			
 			<div class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, enim quisquam? Hic. <a href="/">CLICK</a></div>
 		</div>
+
 		<div class="card">
 			<div class="card-title">Better than I expected</div>
 			
 			<div class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, enim quisquam? Hic. <a href="/">CLICK</a></div>
 		</div>
 	</div>
+	
 	<h1>Words</h1>
 
 	<p>
@@ -67,7 +70,7 @@
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium placeat aut maiores ea
 		facilis corrupti quibusdam suscipit enim facere beatae?  
 		<br><br><br>
-		<a href="/testim/" class="butt">Enter</a>
+		<a href="/contact/" class="butt">Enter</a>
 	</p>
 
 	
@@ -88,7 +91,6 @@
 
 		input,
 		textarea {
-			
 			width: 100%;
 			font-size: $f-lg;
 			background: transparent;
@@ -151,6 +153,14 @@
 
     .reviews{
 		background: $gradientFlip;
+
+		.card{
+			margin-top: $marg_xxxl;
+
+			@media (min-width: 1280px) {
+
+	}
+		}
 	}
 
 	.butt{

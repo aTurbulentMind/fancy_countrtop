@@ -145,7 +145,7 @@
 		display: flex;
 		align-items: center;
 		height: 4rem;
-		padding: $pad;
+		padding: 3%;
 		color: $textMain;
 		font-weight: 400;
 		text-decoration: none;
@@ -168,7 +168,7 @@
 		}
 
 		.nav-extra li a {
-			padding: $pad;
+			padding: 10px;
 			background: #fff;
 			display: none;
 		}
@@ -206,11 +206,11 @@
 	.logo {
 		font-weight: bold;
 		text-transform: uppercase;
-		margin-bottom: $marg;
+		margin-bottom: 1rem;
 		text-align: center;
 		color: $textMain;
 		background: $backTre;
-		font-size: $font;
+		font-size: 1rem;
 		letter-spacing: 0.3ch;
 		width: 100%;
 
@@ -263,7 +263,7 @@
 			}
 
 			svg {
-				max-width: 1.25rem;
+				width: 1.25rem;
 				margin: 0 0.25rem;
 			}
 		}
@@ -318,7 +318,7 @@
 		}
 
 		.link-text {
-			font-size: $font;
+			font-size: 1.5vw;
 		}
 
 		.navbar {
