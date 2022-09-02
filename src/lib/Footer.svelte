@@ -67,6 +67,8 @@
 		margin-bottom: $marg_xxxl;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
+		z-index: 10;
+		position: relative;
 
 		footBox {
 			margin: 8% 0 0 0;

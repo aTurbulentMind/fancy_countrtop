@@ -17,9 +17,10 @@ $thick: 1px !default;
 $rad: 20px !default;
 $bord: 1px solid $highlight;
 
-// box-shadow
+// shadow
 $box-shadow: 1px 3px 5px hsl(40, 20%, 3%) !default;
 $mainShadow:3px 3px 1px 1px #997b1a70;
+$text_shadow:2px 2px 2px $backMain;
 
 //opacity
 $op-t:0.25;

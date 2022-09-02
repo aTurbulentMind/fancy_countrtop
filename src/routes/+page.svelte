@@ -18,8 +18,6 @@
 		PerspectiveCamera
 	} from '@threlte/core';
 	import { GLTF, Float } from '@threlte/extras';
-	let floor = 0.5;
-	let segments = 20;
 </script>
 
 
@@ -29,7 +27,7 @@
 	<div class="scene_head" />
 	<Canvas>
 		<PerspectiveCamera position={{ x: 10, y: 10, z: 6 }}>
-			<OrbitControls enableDamping />
+			<OrbitControls />
 		</PerspectiveCamera>
 
 		<DirectionalLight
@@ -45,13 +43,13 @@
 			<GLTF url={'/initOne.glb'} scale={12} castShadow position={{ y: -0.5 }} />
 		</Float>
 	</Canvas>
-</div>
+    </div>
 
 	<div class="art-banner" id="art-banner">
 		<div class="art-banner-bg" />
 		<div class="banner-text">Artistic <br />Artisian <br /> Countertops</div>
 
-		<div class="form">
+		<div class="form upper">
 			<container>
 				<form action="https://formsubmit.co/joelkrivers@gmail.com" method="POST">
 					<wrapper>
@@ -66,7 +64,7 @@
 					</wrapper>
 					<br />
 					<br />
-					<button class="butt" type="submit">Contact</button>
+					<button class="butt upper" type="submit">Contact</button>
 				</form>
 			</container>
 		</div>
@@ -102,6 +100,7 @@
 		</div>
 	</div>
 	
+
 	<h1>Words</h1>
 
 	<p>
@@ -126,8 +125,20 @@
 <style lang="scss">
 	@import '../src/lib/basecamp';
 
-	h1, h2, p, a, .card {
+	 .card {
 		z-index: 10;
+	}
+
+	h1, h2, p {
+		z-index: 5;
+		position: relative;
+		background-color: $backHallow;
+		border: $bord;
+    	box-shadow: $mainShadow;
+    	border-radius: $rad;
+		width: fit-content;
+		padding: $pad;
+		text-shadow: $text_shadow;
 	}
 
 	.scene_canvas {
@@ -162,7 +173,7 @@
 		textarea {
 			width: 100%;
 			font-size: $f-lg;
-			background: transparent;
+			background: $backHallow;
 			padding:0 $pad;
 			border: none;
 			border-radius: $rad;
@@ -212,6 +223,7 @@
 		justify-self: center;
 		margin-left: 5rem;
 		z-index: 3;
+		text-shadow: $text_shadow;
 	}
 
 	.form {

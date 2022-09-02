@@ -1,3 +1,8 @@
+//upper
+.upper {
+    z-index: 30;
+}
+
 // mixins
 
 @mixin glassBack() {
@@ -50,6 +55,7 @@ $tSpeed: 0.3s;
     padding: $pad;
     margin: $marg;
     font-family: $mainFont;
+    z-index: 10;
 }
 
 

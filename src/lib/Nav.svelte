@@ -118,7 +118,7 @@
 		position: fixed;
 		right: 0;
 		overflow: hidden;
-		z-index: 5;
+		z-index: 15;
 
 		.home {
 			display: initial;
@@ -242,12 +242,13 @@
 	}
 
 	/* Small screens */
-	@media only screen and (max-width: 600px) {
+	@media only screen and (max-width: 740px) {
 		.navbar {
 			bottom: 0;
 			width: 100vw;
 			height: 4rem;
 			background: $highlight;
+			z-index:15;
 		}
 
 		.logo {
