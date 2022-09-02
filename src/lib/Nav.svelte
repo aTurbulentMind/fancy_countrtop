@@ -103,6 +103,11 @@
 <style lang="scss">
 	@import 'basecamp';
 
+	.label {
+		overflow-y: hidden;
+		margin: 4%;
+	}	
+
 	.navbar {
 		background: $highlight;
 		box-shadow: $mainShadow;
@@ -112,7 +117,6 @@
 		transition: $tSpeed;
 		position: fixed;
 		right: 0;
-		transition: width 600ms ease;
 		overflow: hidden;
 		z-index: 5;
 
@@ -139,6 +143,7 @@
 
 	.nav-item {
 		width: 100%;
+
 	}
 
 	.nav-link {
@@ -174,8 +179,9 @@
 		}
 
 		svg {
-			min-width: 2rem;
-			margin: 0 1.25rem;
+			width: 2rem;
+			margin: 5% 1%;
+			appearance: auto;
 		}
 
 		.rotat {
@@ -263,8 +269,8 @@
 			}
 
 			svg {
-				width: 1.25rem;
-				margin: 0 0.25rem;
+				max-width: 2rem;
+				margin: 0 1.25rem;
 			}
 		}
 
@@ -288,7 +294,7 @@
 	}
 
 	/* Large screens */
-	@media only screen and (min-width: 600px) {
+	@media only screen and (min-width: 768px) {
 		.navbar {
 			top: 0;
 			width: 5rem;

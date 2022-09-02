@@ -1,5 +1,52 @@
+<script>
+	import {
+		CircleBufferGeometry,
+		MeshStandardMaterial,
+		MeshPhysicalMaterial,
+		BoxBufferGeometry,
+		DoubleSide,
+		SphereBufferGeometry,
+		Color,
+		BackSide
+	} from 'three';
+	import {
+		Canvas,
+		DirectionalLight,
+		AmbientLight,
+		Mesh,
+		OrbitControls,
+		PerspectiveCamera
+	} from '@threlte/core';
+	import { GLTF, Float } from '@threlte/extras';
+	let floor = 0.5;
+	let segments = 20;
+</script>
+
 
 <body>
+
+	<div class="scene_canvas">
+	<div class="scene_head" />
+	<Canvas>
+		<PerspectiveCamera position={{ x: 10, y: 10, z: 6 }}>
+			<OrbitControls enableDamping />
+		</PerspectiveCamera>
+
+		<DirectionalLight
+			shadow
+			intensity={1}
+			color={'white'}
+			position={{ x: 5, y: 15, z: 10 }}
+			target={{ x: 1 }}
+		/>
+		<AmbientLight intensity={0.875} />
+
+		<Float>
+			<GLTF url={'/initOne.glb'} scale={12} castShadow position={{ y: -0.5 }} />
+		</Float>
+	</Canvas>
+</div>
+
 	<div class="art-banner" id="art-banner">
 		<div class="art-banner-bg" />
 		<div class="banner-text">Artistic <br />Artisian <br /> Countertops</div>
@@ -55,18 +102,18 @@
 		</div>
 	</div>
 	
-	<h1>Words</h1>
+	<h1 >Words</h1>
 
-	<p>
+	<p class="card">
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempora sint rem voluptatum
 		reprehenderit repellendus facere ad a totam assumenda! Dolorum maxime mollitia fugit ipsum odit
 		praesentium autem, quo distinctio commodi iusto! Corporis praesentium laudantium saepe enim
 		commodi vero voluptate!
 	</p>
 
-	<h2>Other words.</h2>
+	<h2 class="card">Other words.</h2>
 
-	<p>
+	<p class="card">
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium placeat aut maiores ea
 		facilis corrupti quibusdam suscipit enim facere beatae?  
 		<br><br><br>
@@ -78,6 +125,28 @@
 
 <style lang="scss">
 	@import '../src/lib/basecamp';
+
+	h1, h2, p, a, .card {
+		z-index: 10;
+	}
+
+	.scene_canvas {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin-top: 5%;
+	}
+
+	.scene_head {
+		position: fixed;
+		top: 3rem;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		font-family: Verdana, sans-serif;
+	}
 
 	.art-banner {
 		@include grid;
