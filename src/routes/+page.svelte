@@ -102,18 +102,18 @@
 		</div>
 	</div>
 	
-	<h1 >Words</h1>
+	<h1>Words</h1>
 
-	<p class="card">
+	<p>
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempora sint rem voluptatum
 		reprehenderit repellendus facere ad a totam assumenda! Dolorum maxime mollitia fugit ipsum odit
 		praesentium autem, quo distinctio commodi iusto! Corporis praesentium laudantium saepe enim
 		commodi vero voluptate!
 	</p>
 
-	<h2 class="card">Other words.</h2>
+	<h2>Other words.</h2>
 
-	<p class="card">
+	<p>
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium placeat aut maiores ea
 		facilis corrupti quibusdam suscipit enim facere beatae?  
 		<br><br><br>
