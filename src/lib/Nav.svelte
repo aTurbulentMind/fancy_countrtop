@@ -118,7 +118,7 @@
 		position: fixed;
 		right: 0;
 		overflow: hidden;
-		z-index: 15;
+		z-index: 50;
 
 		.home {
 			display: initial;
@@ -248,7 +248,7 @@
 			width: 100vw;
 			height: 4rem;
 			background: $highlight;
-			z-index:15;
+			z-index:50;
 		}
 
 		.logo {
@@ -270,8 +270,8 @@
 			}
 
 			svg {
-				max-width: 2rem;
-				margin: 0 1.25rem;
+				width: 1rem;
+				margin: 0 1remstephen ;
 			}
 		}
 

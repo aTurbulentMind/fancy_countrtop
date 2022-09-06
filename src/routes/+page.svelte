@@ -1,11 +1,8 @@
 <script>
 	import {
-		CircleBufferGeometry,
 		MeshStandardMaterial,
 		MeshPhysicalMaterial,
-		BoxBufferGeometry,
 		DoubleSide,
-		SphereBufferGeometry,
 		Color,
 		BackSide
 	} from 'three';
@@ -38,10 +35,12 @@
 			target={{ x: 1 }}
 		/>
 		<AmbientLight intensity={0.875} />
-
+		
 		<Float>
 			<GLTF url={'/initOne.glb'} scale={12} castShadow position={{ y: -0.5 }} />
 		</Float>
+
+		
 	</Canvas>
     </div>
 
@@ -147,7 +146,6 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		margin-top: 5%;
 	}
 
 	.scene_head {
