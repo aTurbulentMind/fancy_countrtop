@@ -1,0 +1,103 @@
+//upper
+.upper {
+    z-index: 30;
+}
+
+// mixins
+
+@mixin glassBack() {
+    background: $backTwo;
+    box-shadow: $box-shadow;
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    border-radius: $rad;
+    border: $thick solid $backTre;
+}
+
+@mixin grid() {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin: $marg_xl;
+    gap: $pad;
+}
+
+@mixin butts() {
+    background: rgba(15, 17, 15, 0.616);
+    color: $textMain;
+    transition: all $tSpeed ease-in-out;
+
+    &:hover {
+        transition: all $tSpeed ease-in-out;
+        background: $grabber;
+        color: $backMain;
+        box-shadow: $mainShadow;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
+
+
+//transit/ani
+$tSpeed: 0.3s;
+
+
+
+//buttons
+
+.butt {
+    @include butts;
+
+    font-weight: 100;
+    border: $bord;
+    border-radius: $rad;
+    text-transform: uppercase;
+    padding: $pad;
+    margin: $marg;
+    font-family: $mainFont;
+    z-index: 10;
+}
+
+
+
+//card
+.card {
+    display: block;
+    height: fit-content;
+    margin: $marg_xxl;
+    padding: $pad;
+    border: $bord;
+    box-shadow: $mainShadow;
+    border-radius: $rad;
+    background: $backHallow;
+
+    .card-title {
+        font-size: $font;
+        font-weight: bold;
+    }
+
+    .card-body {
+        font-size: $f-sm;
+
+        a {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+//review block
+.reviews {
+    @include grid;
+    margin-top: -5%;
+
+    .card {
+        padding: 20px;
+        margin: 0 12%;
+    }
+
+    @media (min-width: 780px) {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: $pad_xxl;
+    }
+}
