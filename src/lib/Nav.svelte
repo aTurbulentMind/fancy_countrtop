@@ -270,7 +270,7 @@
 			}
 
 			svg {
-				width: 1rem;
+				width: 1.5rem;
 				margin: 0 1rem;
 			}
 		}

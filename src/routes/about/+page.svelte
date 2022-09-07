@@ -4,7 +4,7 @@
     
     <img class="face" src="img/faceo.jpg/" alt="its my face">
 
-    <h1>Larae Smith</h1>\
+    <h1>Larae Smith</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsum quaerat omnis. Eum omnis, aliquid necessitatibus, assumenda molestias sequi suscipit dicta ad aut, quasi possimus hic ipsum dolorum modi velit iste repellat ex doloribus dignissimos.</p>
 
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut ipsam facere ratione ad mollitia aut debitis commodi dicta voluptatem, culpa suscipit natus quos animi tenetur odit voluptatibus! Iusto dolores eius vel quasi, doloremque corporis necessitatibus ipsam quas reiciendis doloribus vero ab modi praesentium illum. Autem optio aperiam explicabo obcaecati quisquam!.</p>

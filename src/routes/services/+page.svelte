@@ -100,6 +100,8 @@
 	}
 
 	.card{
+		
+		margin: 8%;
 	.card-title {
         font-size: $f-xl;
         font-weight: bold;

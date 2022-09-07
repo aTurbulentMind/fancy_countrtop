@@ -9,7 +9,7 @@ body {
     background-size: 100%;
     color: $textMain;
     overflow-x: hidden;
-    margin: -8px;
+    width: 100vw;
     letter-spacing: 2px;
     line-height: 1.5;
 }
@@ -47,6 +47,7 @@ p {
 img {
     max-width: 100%;
     z-index: 10;
+    border-radius: $rad;
 }
 
 video {

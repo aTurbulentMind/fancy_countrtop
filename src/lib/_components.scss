@@ -90,6 +90,7 @@ $tSpeed: 0.3s;
 .reviews {
     @include grid;
     margin-top: -5%;
+    gap: $marg_xxl;
 
     .card {
         padding: 20px;

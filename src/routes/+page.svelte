@@ -161,7 +161,8 @@
 		@include grid;
 		background: $gradient;
 		height: 100vh;
-		
+		width: 100vw;
+		margin: 0;
 
 		svg {
 			width: 50%;
@@ -179,6 +180,7 @@
 			border-bottom: 1px solid $textMain;
 			transition: $tSpeed linear;
 			margin-left: $marg_xxxl;
+			color: $textMain;
 		}
 
 		input:focus,
@@ -232,6 +234,8 @@
 
     .reviews{
 		background: $gradientFlip;
+		width: 100vw;
+		margin: 0;
 
 		.card{
 			margin-top: $marg_xxxl;
