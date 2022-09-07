@@ -190,7 +190,7 @@
 			font-size: $f-sm;
 			text-align: center;
 			position: absolute;
-			padding: $pad_sm;
+			padding: 0;
 			background: $highlight;
 			border: $bord;
 			border-radius:$rad;
