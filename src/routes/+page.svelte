@@ -186,12 +186,12 @@
 		
 		.controls {
 			bottom: 12%;
-			right: 0.25rem;
+			right: 1px;
 			font-size: $f-sm;
 			text-align: center;
 			position: absolute;
 			padding: 0;
-			background: $highlight;
+			background: $backHallow;
 			border: $bord;
 			border-radius:$rad;
 		}
