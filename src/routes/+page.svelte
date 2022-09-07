@@ -15,6 +15,8 @@
 		PerspectiveCamera
 	} from '@threlte/core';
 	import { GLTF, Float } from '@threlte/extras';
+
+	let enableUserControl = false;
 </script>
 
 
@@ -24,7 +26,7 @@
 	<div class="scene_head" />
 	<Canvas>
 		<PerspectiveCamera position={{ x: 10, y: 10, z: 6 }}>
-			<OrbitControls />
+			<OrbitControls enabled={enableUserControl} />
 		</PerspectiveCamera>
 
 		<DirectionalLight
@@ -39,10 +41,17 @@
 		<Float>
 			<GLTF url={'/initOne.glb'} scale={12} castShadow position={{ y: -0.5 }} />
 		</Float>
+		</Canvas>
 
-		
-	</Canvas>
-    </div>
+		<div class="controls">
+    	<label>Scene <br> Control <br>
+     	 <input 
+        type="checkbox"
+        bind:checked={enableUserControl}
+		 />
+   		 </label>
+		</div>
+    	</div>
 
 	<div class="art-banner" id="art-banner">
 		<div class="art-banner-bg" />
@@ -146,6 +155,46 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
+
+		input[type="checkbox"] {
+			height:1.5em;
+			width:1.5em;
+			cursor:pointer;
+			position:relative;
+			margin: 0 1.25rem;
+			-webkit-transition: .10s;
+			-webkit-appearance:none;
+			border-radius:4em;
+			background-color:$grabber;
+		}
+		input[type="checkbox"]:checked {
+			background-color:$extra;
+		}
+		input[type="checkbox"]:before, input[type="checkbox"]:checked:before {
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			line-height:1.5em;
+			text-align:center;
+			color:white;
+		}
+		input[type="checkbox"]:checked:before {
+			content: '✔';
+		}
+		
+		.controls {
+			bottom: 12%;
+			right: 0.25rem;
+			font-size: $f-sm;
+			text-align: center;
+			position: absolute;
+			padding: $pad_sm;
+			background: $highlight;
+			border: $bord;
+			border-radius:$rad;
+		}
 	}
 
 	.scene_head {
