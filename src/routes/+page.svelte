@@ -26,7 +26,7 @@
 	<div class="scene_head" />
 	<Canvas>
 		<PerspectiveCamera position={{ x: 10, y: 10, z: 6 }}>
-			<OrbitControls enabled={enableUserControl} />
+			<OrbitControls  enabled={enableUserControl} />
 		</PerspectiveCamera>
 
 		<DirectionalLight
@@ -39,23 +39,28 @@
 		<AmbientLight intensity={0.875} />
 		
 		<Float>
-			<GLTF url={'/initOne.glb'} scale={12} castShadow position={{ y: -0.5 }} />
+			<GLTF 
+			url={'/initOne.glb'} 
+			rotation={{ x: 0  * (Math.PI / 45) }} 
+			scale={12} 
+			castShadow position={{ y: -0.5 }}
+			 />
 		</Float>
 		</Canvas>
 
-		<div class="controls">
+		<!-- <div class="controls">
     	<label>Scene <br> Control <br>
      	 <input 
         type="checkbox"
         bind:checked={enableUserControl}
 		 />
    		 </label>
-		</div>
+		</div>--> 
     	</div>
 
 	<div class="art-banner" id="art-banner">
 		<div class="art-banner-bg" />
-		<div class="banner-text">Artistic <br />Artisian <br /> Countertops</div>
+		<div class="banner-text">Artistic <br />Artisan <br /> Countertops</div>
 
 		<div class="form upper">
 			<container>
@@ -133,9 +138,7 @@
 <style lang="scss">
 	@import '../src/lib/basecamp';
 
-	 .card {
-		z-index: 10;
-	}
+
 
 	h1, h2, p {
 		z-index: 5;
@@ -288,6 +291,7 @@
 
 		.card{
 			margin-top: $marg_xxxl;
+			z-index: 10;
 
 			@media (min-width: 1280px) {
 

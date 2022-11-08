@@ -64,7 +64,7 @@ $tSpeed: 0.3s;
 .card {
     display: block;
     height: fit-content;
-    margin: $marg_xxl;
+    margin: $marg_xl;
     padding: $pad;
     border: $bord;
     box-shadow: $mainShadow;
@@ -94,7 +94,7 @@ $tSpeed: 0.3s;
 
     .card {
         padding: 20px;
-        margin: 0 12%;
+        margin: 5% 8%;
     }
 
     @media (min-width: 780px) {

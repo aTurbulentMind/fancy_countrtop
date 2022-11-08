@@ -78,7 +78,7 @@
 				}
 			}
 			socBox {
-				SVG {
+				svg {
 					background: $textMain;
 					color: $backMain;
 					border-radius: 50%;

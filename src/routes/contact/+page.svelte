@@ -57,7 +57,7 @@
             <wrapper>
                 <box>
                     <textarea id="mes" required></textarea>
-                    <label for="mes">Words here and stuff...</label>
+                    <label for="mes">Message or comment,</label>
                 </box>
             </wrapper>
             <br><br><br><br>
